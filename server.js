@@ -37,5 +37,5 @@ app.get("/", function(req, res){
 app.post("/", function(req, res){
   original = String(req.body.str1);
   permute(original, permutation);
-  res.send("All permutations of "+original+" = \n"+all.join(" "));
+  res.send(all.join("  "));
 })
